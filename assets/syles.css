@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+  gap: 1px;
+  max-width: 1024px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100%;
+  padding-top: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6em;
+  overflow: hidden;
+}
+
+.even {
+  background-color: lightgreen;
+}
+
+.odd {
+  background-color: lightyellow;
+}
+
+.prime {
+  background-color: lightcoral;
+}
+
+@media screen and (max-width: 600px) {
+  /* Adjust styles for small screens */
+  .container {
+    margin: 10px;
+  }
+}
