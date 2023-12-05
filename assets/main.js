@@ -10,7 +10,7 @@ function generateNumbers () {
   const container = document.getElementById('number-container')
 
   for (let i = 0; i < 10000; i++) {
-    const number = Math.floor(Math.random () * 1000) + 1
+    const number = Math.floor(Math.random() * 1000) + 1
     const cell = document.createElement('div')
 
     // Set the text content of the cell to the generated number
